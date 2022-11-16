@@ -72,7 +72,7 @@ class UI {
   
 
 // Store class: Handles storage
-// uses browsers storage (local storage); doesn't go away if you refresh or leave the browser. remains until cleared. 
+// uses browsers storage (local storage); 
 
 class Store {
 
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", UI.displayBooks);
 
 document.querySelector("#book-form").addEventListener("submit", (e) => {
 
- // Need to prevent default value from submit ??
+ // Need to prevent default value from submit
 
  e.preventDefault();
  
@@ -137,11 +137,11 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
  
   // Add Book to UI
 
-  UI.addBookToList(book); /* in an of itself this doesn't persist in local storage as of 23:45  */
+  UI.addBookToList(book); /* in and of itself this doesn't persist in local storage as of 23:45  */
 
   // add Book to Store
 
-  Store.addBook(book); /* persistence in local storage by 47:53 */
+  Store.addBook(book); 
 
   // clear fields
 
@@ -154,7 +154,8 @@ document.querySelector("#book-form").addEventListener("submit", (e) => {
 // Event: Remove a Book (using Event Propagation)
 
 document.querySelector("#book-list").addEventListener("click", (e) => {
+ 
  UI.deleteBook(e.target);
 
- UI.showAlert("Book deleted!", "success");
+ UI.showAlert("Book deleted!", "danger");
 });

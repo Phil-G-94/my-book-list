@@ -7,4 +7,5 @@
 
 
 ## ToDo
-- Fix the issue with data persisting in browser storage. 
+- Fix issue with data persisting in browser storage. 
+- Fix issue with delete button. Alert "Book has been deleted!" appears when row outside of X is clicked.
